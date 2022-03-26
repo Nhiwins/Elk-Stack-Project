@@ -88,11 +88,8 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the IP addresses of the Web1, Web2, and Elk Server VMs. This also includes enabling the use of python with `ansible_python_interpreter=/usr/bin/python3`
 - Run the playbook, and navigate to the ELK server to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- The playbook files are (https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Ansible/filebeat-playbook.yml) and (https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Ansible/metricbeat-playbook.yml). These files are copied to the `/etc/ansible/rules` directory.
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- The files used to update are 
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- The playbook files are [filebeat-playbook.yml](https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Ansible/filebeat-playbook.yml) and [metricbeat-playbook.yml](https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Ansible/metricbeat-playbook.yml). These files are copied to the `/etc/ansible/rules` directory.
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- The files used to update are the [filebeat-config.yml](https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Ansible/Config%20Files/filebeat-config.yml) and the [metricbeat-config.yml](https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Ansible/Config%20Files/metricbeat-config.yml). The host must be specified in order to configure the files for the right machine.
+
+- To check that the ELK Server is running correctly, you must visit http://[Host IP]/app/kibana#/home within a browser
