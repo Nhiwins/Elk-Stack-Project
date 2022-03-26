@@ -1,2 +1,4 @@
-##Faulty Firewall
+## Faulty Firewall
 
+Suppose you have a firewall that's supposed to block SSH connections, but instead lets them through. How would you debug it? 
+Within the last project, there were multiple virtual machines that were contained within a security group. The security group by default did not allow SSH connections. I added SSH connections through my specific IP address to access the Jumpbox gateway which was the only virtual machine that could access the other machines on the network. This was added so that Docker and Ansible could be installed on to the Jumpbox. In turn, I was able to install Docker containers into the other machines. However, if there was attempted SSH traffic to the Web1, Web2, or ELK server machines, the connection would not be successful. The only public access is through the Jumpbox machine due to the security rules set in place. 
