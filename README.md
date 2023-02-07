@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Elk Network Diagram](https://github.com/Nhiwins/Elk-Stack-Project/blob/main/Images/Elk%20Stack%20Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible playbook files may be used to install only certain pieces of it, such as `Filebeat`.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the Ansible playbook files may be used to install only certain pieces of it, such as `Filebeat`.
 
   - [Ansible Playbooks](https://github.com/Nhiwins/Elk-Stack-Project/tree/main/Ansible)
 
@@ -37,7 +37,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jumpbox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jumpbox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
 - My Personal IP Address
 
 Machines within the network can only be accessed by the Jumpbox Provisioner and my personal workstation.
